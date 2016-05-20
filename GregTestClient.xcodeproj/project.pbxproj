@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		370D28631CEE6F0B007ACC65 /* gregshared.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 370D28621CEE6F0B007ACC65 /* gregshared.hpp */; };
+		370D28651CEE6F0B007ACC65 /* gregsharedPriv.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 370D28641CEE6F0B007ACC65 /* gregsharedPriv.hpp */; };
+		370D28671CEE6F0B007ACC65 /* gregshared.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 370D28661CEE6F0B007ACC65 /* gregshared.cpp */; };
 		3785050C1CE22044006FE0CD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3785050B1CE22044006FE0CD /* main.cpp */; };
+		37A606EF1CEF9F66000C9DAF /* maceldos.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 37A606EE1CEF9F66000C9DAF /* maceldos.hpp */; };
+		37A606F11CEF9F66000C9DAF /* maceldosPriv.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 37A606F01CEF9F66000C9DAF /* maceldosPriv.hpp */; };
+		37A606F31CEF9F66000C9DAF /* maceldos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37A606F21CEF9F66000C9DAF /* maceldos.cpp */; };
+		37A606F81CEFA51D000C9DAF /* libmaceldos.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A606EC1CEF9F66000C9DAF /* libmaceldos.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,12 +30,37 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		370D28601CEE6F0B007ACC65 /* libgregshared.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libgregshared.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		370D28621CEE6F0B007ACC65 /* gregshared.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = gregshared.hpp; sourceTree = "<group>"; };
+		370D28641CEE6F0B007ACC65 /* gregsharedPriv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = gregsharedPriv.hpp; sourceTree = "<group>"; };
+		370D28661CEE6F0B007ACC65 /* gregshared.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gregshared.cpp; sourceTree = "<group>"; };
 		378505081CE22044006FE0CD /* GregTestClient */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GregTestClient; sourceTree = BUILT_PRODUCTS_DIR; };
 		3785050B1CE22044006FE0CD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		37A606E11CEF43E4000C9DAF /* libsbb.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsbb.dylib; path = ../../Downloads/secbboxcpp_mac/Libraries/MacOS64/libsbb.dylib; sourceTree = "<group>"; };
+		37A606E31CEF43E8000C9DAF /* libsbb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsbb.a; path = ../../Downloads/secbboxcpp_mac/Libraries/MacOSStatic/libsbb.a; sourceTree = "<group>"; };
+		37A606EC1CEF9F66000C9DAF /* libmaceldos.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libmaceldos.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		37A606EE1CEF9F66000C9DAF /* maceldos.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = maceldos.hpp; sourceTree = "<group>"; };
+		37A606F01CEF9F66000C9DAF /* maceldosPriv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = maceldosPriv.hpp; sourceTree = "<group>"; };
+		37A606F21CEF9F66000C9DAF /* maceldos.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = maceldos.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		370D285D1CEE6F0B007ACC65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		378505051CE22044006FE0CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37A606F81CEFA51D000C9DAF /* libmaceldos.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37A606E91CEF9F66000C9DAF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,10 +70,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		370D28611CEE6F0B007ACC65 /* gregshared */ = {
+			isa = PBXGroup;
+			children = (
+				370D28621CEE6F0B007ACC65 /* gregshared.hpp */,
+				370D28641CEE6F0B007ACC65 /* gregsharedPriv.hpp */,
+				370D28661CEE6F0B007ACC65 /* gregshared.cpp */,
+			);
+			path = gregshared;
+			sourceTree = "<group>";
+		};
 		378504FF1CE22044006FE0CD = {
 			isa = PBXGroup;
 			children = (
+				37A606E31CEF43E8000C9DAF /* libsbb.a */,
+				37A606E11CEF43E4000C9DAF /* libsbb.dylib */,
+				378505121CE22094006FE0CD /* New Group */,
 				3785050A1CE22044006FE0CD /* GregTestClient */,
+				370D28611CEE6F0B007ACC65 /* gregshared */,
+				37A606ED1CEF9F66000C9DAF /* maceldos */,
 				378505091CE22044006FE0CD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				378505081CE22044006FE0CD /* GregTestClient */,
+				370D28601CEE6F0B007ACC65 /* libgregshared.dylib */,
+				37A606EC1CEF9F66000C9DAF /* libmaceldos.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,9 +111,64 @@
 			path = GregTestClient;
 			sourceTree = "<group>";
 		};
+		378505121CE22094006FE0CD /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		37A606ED1CEF9F66000C9DAF /* maceldos */ = {
+			isa = PBXGroup;
+			children = (
+				37A606EE1CEF9F66000C9DAF /* maceldos.hpp */,
+				37A606F01CEF9F66000C9DAF /* maceldosPriv.hpp */,
+				37A606F21CEF9F66000C9DAF /* maceldos.cpp */,
+			);
+			path = maceldos;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		370D285E1CEE6F0B007ACC65 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				370D28631CEE6F0B007ACC65 /* gregshared.hpp in Headers */,
+				370D28651CEE6F0B007ACC65 /* gregsharedPriv.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37A606EA1CEF9F66000C9DAF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37A606EF1CEF9F66000C9DAF /* maceldos.hpp in Headers */,
+				37A606F11CEF9F66000C9DAF /* maceldosPriv.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		370D285F1CEE6F0B007ACC65 /* gregshared */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 370D286A1CEE6F0B007ACC65 /* Build configuration list for PBXNativeTarget "gregshared" */;
+			buildPhases = (
+				370D285C1CEE6F0B007ACC65 /* Sources */,
+				370D285D1CEE6F0B007ACC65 /* Frameworks */,
+				370D285E1CEE6F0B007ACC65 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gregshared;
+			productName = gregshared;
+			productReference = 370D28601CEE6F0B007ACC65 /* libgregshared.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
 		378505071CE22044006FE0CD /* GregTestClient */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3785050F1CE22044006FE0CD /* Build configuration list for PBXNativeTarget "GregTestClient" */;
@@ -82,6 +186,23 @@
 			productReference = 378505081CE22044006FE0CD /* GregTestClient */;
 			productType = "com.apple.product-type.tool";
 		};
+		37A606EB1CEF9F66000C9DAF /* maceldos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37A606F41CEF9F66000C9DAF /* Build configuration list for PBXNativeTarget "maceldos" */;
+			buildPhases = (
+				37A606E81CEF9F66000C9DAF /* Sources */,
+				37A606E91CEF9F66000C9DAF /* Frameworks */,
+				37A606EA1CEF9F66000C9DAF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = maceldos;
+			productName = maceldos;
+			productReference = 37A606EC1CEF9F66000C9DAF /* libmaceldos.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -91,7 +212,13 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Gregory Brill";
 				TargetAttributes = {
+					370D285F1CEE6F0B007ACC65 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 					378505071CE22044006FE0CD = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					37A606EB1CEF9F66000C9DAF = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
@@ -109,11 +236,21 @@
 			projectRoot = "";
 			targets = (
 				378505071CE22044006FE0CD /* GregTestClient */,
+				370D285F1CEE6F0B007ACC65 /* gregshared */,
+				37A606EB1CEF9F66000C9DAF /* maceldos */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		370D285C1CEE6F0B007ACC65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				370D28671CEE6F0B007ACC65 /* gregshared.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		378505041CE22044006FE0CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -122,9 +259,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		37A606E81CEF9F66000C9DAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37A606F31CEF9F66000C9DAF /* maceldos.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		370D28681CEE6F0B007ACC65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		370D28691CEE6F0B007ACC65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		3785050D1CE22044006FE0CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -207,13 +378,89 @@
 		378505101CE22044006FE0CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/Greg/Downloads/secbboxcpp_mac/WrapperSources/include/all,
+					/Users/Greg/Downloads/secbboxcpp_mac/WrapperSources/include,
+					/Users/Greg/Downloads/secbboxcpp_mac/WrapperSources/,
+				);
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"\"$(SRCROOT)/../../../Shared/lib/libsbb.dylib\"",
+					"\"$(SRCROOT)/../../../Shared/lib/libsbb.a\"",
+					"-L\"/Users/Shared/lib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REEXPORTED_LIBRARY_PATHS = "";
 			};
 			name = Debug;
 		};
 		378505111CE22044006FE0CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/Greg/Downloads/secbboxcpp_mac/WrapperSources/include/all,
+					/Users/Greg/Downloads/secbboxcpp_mac/WrapperSources/include,
+					/Users/Greg/Downloads/secbboxcpp_mac/WrapperSources/,
+				);
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"\"$(SRCROOT)/../../../Shared/lib/libsbb.dylib\"",
+					"\"$(SRCROOT)/../../../Shared/lib/libsbb.a\"",
+					"-L\"/Users/Shared/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REEXPORTED_LIBRARY_PATHS = "";
+			};
+			name = Release;
+		};
+		37A606F51CEF9F66000C9DAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/Greg/Downloads/secbboxcpp_mac/WrapperSources/include/all,
+					/Users/Greg/Downloads/secbboxcpp_mac/WrapperSources/include,
+					/Users/Greg/Downloads/secbboxcpp_mac/WrapperSources/,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"\"$(SRCROOT)/../../../Shared/lib/libsbb.dylib\"",
+					"\"$(SRCROOT)/../../../Shared/lib/libsbb.a\"",
+					"-L\"/Users/Shared/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		37A606F61CEF9F66000C9DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/Greg/Downloads/secbboxcpp_mac/WrapperSources/include/all,
+					/Users/Greg/Downloads/secbboxcpp_mac/WrapperSources/include,
+					/Users/Greg/Downloads/secbboxcpp_mac/WrapperSources/,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"\"$(SRCROOT)/../../../Shared/lib/libsbb.dylib\"",
+					"\"$(SRCROOT)/../../../Shared/lib/libsbb.a\"",
+					"-L\"/Users/Shared/lib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -221,6 +468,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		370D286A1CEE6F0B007ACC65 /* Build configuration list for PBXNativeTarget "gregshared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				370D28681CEE6F0B007ACC65 /* Debug */,
+				370D28691CEE6F0B007ACC65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		378505031CE22044006FE0CD /* Build configuration list for PBXProject "GregTestClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -235,6 +491,15 @@
 			buildConfigurations = (
 				378505101CE22044006FE0CD /* Debug */,
 				378505111CE22044006FE0CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37A606F41CEF9F66000C9DAF /* Build configuration list for PBXNativeTarget "maceldos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37A606F51CEF9F66000C9DAF /* Debug */,
+				37A606F61CEF9F66000C9DAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "378505071CE22044006FE0CD"
-               BuildableName = "GregTestClient"
-               BlueprintName = "GregTestClient"
+               BlueprintIdentifier = "370D285F1CEE6F0B007ACC65"
+               BuildableName = "libgregshared.dylib"
+               BlueprintName = "gregshared"
                ReferencedContainer = "container:GregTestClient.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "378505071CE22044006FE0CD"
-            BuildableName = "GregTestClient"
-            BlueprintName = "GregTestClient"
-            ReferencedContainer = "container:GregTestClient.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "378505071CE22044006FE0CD"
-            BuildableName = "GregTestClient"
-            BlueprintName = "GregTestClient"
+            BlueprintIdentifier = "370D285F1CEE6F0B007ACC65"
+            BuildableName = "libgregshared.dylib"
+            BlueprintName = "gregshared"
             ReferencedContainer = "container:GregTestClient.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "378505071CE22044006FE0CD"
-            BuildableName = "GregTestClient"
-            BlueprintName = "GregTestClient"
+            BlueprintIdentifier = "370D285F1CEE6F0B007ACC65"
+            BuildableName = "libgregshared.dylib"
+            BlueprintName = "gregshared"
             ReferencedContainer = "container:GregTestClient.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
